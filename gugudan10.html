@@ -1,0 +1,39 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>gugudanFUNC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>함수 사용해 보기</h1>
+    <script>
+      function gugudan(x) {
+        var ret = [];
+        for (var i = 1; i <= 9; i++) {
+          ret[i] = x * i;
+        }
+        return ret;
+      }
+
+      function printResult(x, ret) {
+        document.write("<h2>" + x + "단</h2>");
+        for (var j = 1; j <= 9; j++) {
+          var y = x * j;
+          document.write(x + "*" + j + "=" + y + "</br>");
+        }
+      }
+      function main() {
+        console.log("main함수 실행.");
+        for (var n = 2; n <= 9; n++) {
+          var result = gugudan(n);
+          printResult(n, result);
+        }
+      }
+      main();
+    </script>
+  </body>
+</html>
