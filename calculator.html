@@ -14,10 +14,15 @@
         console.log("calculator1");
         var out = document.getElementById("output");
         out.innerHTML = "계산기 구현하기";
-        console.log(10 + 3);
-        console.log(10 * 3);
-        console.log(10 - 3);
-        console.log(10 / 3);
+
+        var str1 = prompt("첫번째 값을 입력해 주세요.");
+        n1 = Number(str1);
+        var str2 = prompt("두번째 값을 입력해 주세요.");
+        n2 = Number(str2);
+        console.log(n1 + n2);
+        console.log(n1 - n2);
+        console.log(n1 * n2);
+        console.log(n1 / n2);
       }
       main();
     </script>
