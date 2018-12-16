@@ -13,16 +13,17 @@
       function main() {
         console.log("calculator1");
         var out = document.getElementById("output");
-        out.innerHTML = "계산기 구현하기";
+        var str = "";
+        str += "<h2> 계산기 구현하기 </h2>";
 
-        var str1 = prompt("첫번째 값을 입력해 주세요.");
-        n1 = Number(str1);
-        var str2 = prompt("두번째 값을 입력해 주세요.");
-        n2 = Number(str2);
-        console.log(n1 + n2);
-        console.log(n1 - n2);
-        console.log(n1 * n2);
-        console.log(n1 / n2);
+        var n1 = Number(prompt("첫번째 값을 입력해 주세요."));
+        var n2 = Number(prompt("두번째 값을 입력해 주세요."));
+        str += "더하기: " + (n1 + n2) + "<br>";
+        str += "빼기: " + (n1 - n2) + "<br>";
+        str += "곱하기: " + n1 * n2 + "<br>";
+        str += "나누기: " + n1 / n2 + "<br>";
+
+        out.innerHTML = str;
       }
       main();
     </script>
